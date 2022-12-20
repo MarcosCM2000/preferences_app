@@ -13,9 +13,14 @@ class HomeScreen extends StatelessWidget {
         child: Text('Home'),
       )),
       drawer: const SideMenu(),
-      body: const Center(
-        child: Text('Home Screen'),
-      ),
+      body:
+          Column(mainAxisAlignment: MainAxisAlignment.center, children: const [
+        Text('is Dark Mode: '),
+        Divider(),
+        Text('Genero: '),
+        Divider(),
+        Text('Nombre de usuario: ')
+      ]),
     );
   }
 }
